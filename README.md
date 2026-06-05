@@ -1,53 +1,123 @@
-# Getting Started with Create React App
+# TextUtils - Text Manipulation Utility
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TextUtils is a React-based web application that provides a suite of text manipulation and analysis tools. It features a clean, user-friendly interface with light and dark mode support.
 
-## Available Scripts
+## 🎯 Features
 
-In the project directory, you can run:
+### Text Transformation
+- **Convert to Uppercase** - Transform all text to uppercase letters
+- **Convert to Lowercase** - Transform all text to lowercase letters
+- **Clear Text** - Quickly clear all text from the editor
+- **Copy to Clipboard** - Copy the edited text with a single click
+- **Remove Extra Spaces** - Clean up multiple spaces between words
+- **Reverse Words** - Reverse the order of words in your text
 
-### `npm start`
+### Text Analysis
+- **Word Count** - Real-time word count display
+- **Character Count** - Total character count including spaces
+- **Reading Time** - Estimated reading time based on average reading speed
+- **Live Preview** - See a preview of your text as you type
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Additional Features
+- **Dark/Light Mode Toggle** - Switch between themes for comfortable viewing
+- **Real-time Alerts** - Visual notifications for all text operations
+- **Responsive Design** - Works seamlessly on desktop and mobile devices
+- **About Page** - Information page with accordion-style content
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- **React** (v19.2.6) - UI framework
+- **React Router DOM** (v6.30.3) - Navigation and routing
+- **Bootstrap** - Responsive styling and components
+- **React Scripts** (v5.0.1) - Build and development tools
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📦 Project Structure
 
-### `npm run build`
+```
+src/
+├── App.js                 # Main application component
+├── App.css               # Application styles
+├── index.js              # Entry point
+├── components/
+│   ├── TextForm.js       # Main text editor component
+│   ├── Alert.js          # Alert notification component
+│   ├── Navbar.js         # Navigation bar with dark mode toggle
+│   └── About.js          # About page with accordion
+└── public/               # Static assets
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone or download the project
+2. Navigate to the project directory:
+   ```bash
+   cd textutils
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### `npm start`
+Runs the app in development mode.\
+Open [http://localhost:3000](http://localhost:3000) in your browser.\
+The page reloads automatically when you make changes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### `npm run build`
+Builds the app for production in the `build` folder.\
+The build is minified and optimized for best performance.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### `npm test`
+Launches the test runner in interactive watch mode.\
+See the [Create React App testing guide](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Learn More
+#### `npm run deploy`
+Deploys the app to GitHub Pages (requires gh-pages configuration).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 💡 Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Type or paste text** into the text editor
+2. **Select an action** from the available buttons to transform your text
+3. **View the results** in the preview section and in the editor
+4. **Monitor statistics** - word count, character count, and reading time update in real-time
+5. **Toggle dark mode** using the switch in the navigation bar for comfortable viewing
 
-### Code Splitting
+## 🎨 Dark Mode
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application includes a built-in dark mode toggle in the navbar. Switch between light and dark themes instantly while preserving your text and work.
+
+## 📝 Example Operations
+
+- Convert "hello world" to "HELLO WORLD"
+- Count words and characters in your documents
+- Remove unnecessary spacing in formatted text
+- Quickly copy processed text to clipboard
+- Estimate reading time for content
+
+## 🔄 Project Status
+
+This project is part of a React learning course and serves as a practical demonstration of React concepts including:
+- State management with hooks (useState)
+- Component composition
+- Event handling
+- Conditional rendering
+- Dark mode implementation
+
+## 📄 License
+
+This project is open source and available for learning and development purposes.
+
+## 🤝 Contributing
+
+Feel free to fork, modify, and enhance this project for your learning or personal use.
 
 ### Analyzing the Bundle Size
 
